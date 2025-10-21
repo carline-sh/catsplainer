@@ -1,10 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { Textbox } from '../components/Textbox';
-import catGalaxy from '../assets/cats/cat-galaxy.jpg';
-import catInBath from '../assets/cats/cat-in-bath.jpg';
-import catUpclose from '../assets/cats/cat-upclose.jpg';
-import catLoaf from '../assets/cats/cat-loaf.jpg';
-import catWithWine from '../assets/cats/cat-with-wine.jpg';
 
 export const Route = createFileRoute('/')({
     component: RouteComponent,
@@ -13,7 +8,7 @@ export const Route = createFileRoute('/')({
 function RouteComponent() {
     return (
         <div className="min-h-screen relative">
-            <img className="absolute inset-0 w-full h-full object-cover -z-10 filter-blur" src={catGalaxy} alt="background" />
+            <img className="absolute inset-0 w-full h-full object-cover -z-10 filter-blur" src="/cats/cat-galaxy.jpg" alt="background" />
             <div className="w-full px-4 py-2">
                 <h1 className="font-dance text-5xl text-pink-500 text-shadow-lg text-shadow-pink-100">Catsplainer</h1>
                 </div>
@@ -23,14 +18,14 @@ function RouteComponent() {
                     <Textbox text="Ethereum cat" />
                     <Link to="/cat/ethereum">
                         <div className="h-48 w-48 flex justify-center items-center">
-                            <img className="w-full h-full rounded-md object-cover" src={catInBath} alt="cat" />
+                            <img className="w-full h-full rounded-md object-cover" src="/cats/cat-in-bath.jpg" alt="cat" />
                         </div>
                     </Link>
                 </div>
                 <div className="w-full flex justify-center gap-4">
                     <Link to="/cat/privacy">
                         <div className="h-48 w-48 flex justify-center items-center">
-                            <img className="w-full h-full rounded-md object-cover" src={catUpclose} alt="cat" />
+                            <img className="w-full h-full rounded-md object-cover" src="/cats/cat-upclose.jpg" alt="cat" />
                         </div>
                     </Link>
                     <Textbox text="Privacy cat" />
@@ -41,14 +36,14 @@ function RouteComponent() {
                     <Textbox text="Steve" />
                     <Link to="/cat/steve">
                     <div className="h-48 w-48 flex justify-center items-center">
-                        <img className="w-full h-full rounded-md object-cover" src={catLoaf} alt="cat" />
+                        <img className="w-full h-full rounded-md object-cover" src="/cats/cat-loaf.jpg" alt="cat" />
                     </div>
                     </Link>
                 </div>
                 <div className="w-full flex justify-center gap-4">
                     <Link to="/cat/hackathon">
                     <div className="h-48 w-48 flex justify-center items-center">
-                        <img className="w-full h-full rounded-md object-cover" src={catWithWine} alt="cat" />
+                        <img className="w-full h-full rounded-md object-cover" src="/cats/cat-with-wine.jpg" alt="cat" />
                     </div>
                     </Link>
                     <Textbox text="Hackathon cat" />
